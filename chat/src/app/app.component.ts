@@ -11,10 +11,10 @@ import { SalaComponent } from "./sala/sala.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  mensajeRecibido: string = '';
+  // mensajeRecibido: string = '';
 
-  recibirMensaje(mensaje: string) {
-    this.mensajeRecibido = mensaje;
-  }
+  // recibirMensaje(mensaje: string) {
+  //   this.mensajeRecibido = mensaje;
+  // }
   
 }

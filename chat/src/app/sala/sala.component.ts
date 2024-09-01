@@ -9,11 +9,18 @@ import { MensajeComponent } from "../mensaje/mensaje.component";
   styleUrl: './sala.component.css'
 })
 export class SalaComponent {
-  @Input() mensaje = '';
-  conversacion:string[] = [];
+  // @Input() mensaje = '';
+  // conversacion:string[] = [];
 
-  recibirMensaje(event : any){
-    this.conversacion.push(event.target.value);
+  // recibirMensaje(event : any){
+  //   this.conversacion.push(event.target.value);
+  // }
+
+  usuario1='María'
+  usuario2='Pepe'
+  mensajes: { usuario: string; texto: string }[] = [];
+  agregarMensaje(mensaje: { usuario: string; texto: string }) {
+    this.mensajes.push(mensaje);
   }
 
 }
